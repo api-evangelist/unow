@@ -1,0 +1,16 @@
+# UniversityNow (uNow)
+
+> UniversityNow, Inc. (uNow) was a San Francisco-based higher-education startup (founded 2011, backed by 500 Startups/500 Global) that built competency-based, self-paced online degree programs. It operated New Charter University and acquired Patten University in 2012. Its competency-based learning platform was sold to Penn Foster Education Group (2016) and to National University System (2018). The company is defunct: unow.com now serves an expired certificate and redirects to a dead newuni.com page. No public API surface exists.
+
+## Company
+
+- [Website (defunct)](https://unow.com): 301-redirects to http://www.newuni.com/, which returns 404
+- [GitHub organization](https://github.com/universitynow): 9 public repos, forks and Ruby utility gems only; no first-party API or SDK
+
+## APIs
+
+- None. UniversityNow published no public API, developer portal, or documentation.
+
+## Catalog
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/unow/refs/heads/main/apis.yml): APIs.json profile in the API Evangelist network

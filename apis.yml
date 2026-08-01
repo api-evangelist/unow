@@ -1,7 +1,23 @@
 aid: unow
-name: uNow
-description: uNow is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/unow.png
+name: uNow (UniversityNow)
+description: UniversityNow, Inc. (uNow) was a San Francisco-based higher-education
+  startup founded in 2011 and backed by 500 Startups (500 Global) that built competency-based,
+  self-paced online degree programs for working adults. It operated New Charter University,
+  acquired Patten University in 2012, and its learning platform was sold to Penn Foster
+  Education Group in 2016 and National University System in 2018. The company is defunct
+  and unow.com now redirects to a dead page; it published no public API.
 url: https://raw.githubusercontent.com/api-evangelist/unow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +25,18 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Education
+- Higher Education
+- EdTech
+- Online Learning
+- Competency-Based Education
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,14 @@ maintainers:
 common:
 - type: Website
   url: https://unow.com
+- type: GitHubOrganization
+  url: https://github.com/universitynow
+- type: DomainSecurity
+  url: security/unow-domain-security.yml
+- type: LLMsTxt
+  url: llms/unow-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

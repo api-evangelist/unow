@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: probed
+source: live probe of unow.com (dig + openssl s_client + curl)
+note: >-
+  Company website is defunct. unow.com resolves and answers HTTPS but serves an
+  invalid, expired certificate (CN=*.hostingplatform.com, Sectigo, expired
+  2022-09-12) and 301-redirects everything to http://www.newuni.com/, which is a
+  Wix "ConnectYourDomain Error" 404 page. Google Workspace MX records remain
+  active on the domain.
+hosts:
+  - host: unow.com
+    https: true
+    cert_valid: false
+    cert_subject_cn: '*.hostingplatform.com'
+    cert_issuer: Sectigo RSA Domain Validation Secure Server CA
+    cert_expired: true
+    cert_not_after: '2022-09-12'
+    hsts: true
+    hsts_max_age: 31536000
+    redirects_to: http://www.newuni.com/
+    redirect_status: 301
+    redirect_target_status: 404
+  - host: www.unow.com
+    https: true
+    cert_valid: false
+    cert_subject_cn: '*.hostingplatform.com'
+    redirects_to: http://www.newuni.com/
+domains:
+  - domain: unow.com
+    dnssec: false
+    caa: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+    mx: [smtp.google.com]
+    nameservers: [dns101.register.com, dns102.register.com]

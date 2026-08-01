@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: probed
+host: https://unow.com
+note: >-
+  No well-known discovery surface. Every path 301-redirects to
+  http://www.newuni.com/ (a dead Wix ConnectYourDomain 404 page); the site is
+  defunct and no document returned 200, so no raw files were saved.
+documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+  - path: /llms.txt
+    status: 301
